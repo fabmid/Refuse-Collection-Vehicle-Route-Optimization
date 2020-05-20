@@ -192,11 +192,12 @@ def routing_calc_vroom(geolocation_data_dict_main, dates_served):
         # Add options dict to main input_file dict
         input_file.update(options)
 
+        '''
         # Save constructed query dict as json
         with open('data/output/optimization/json_query/'+dates_served[i].split()[0] \
                   +'_query.json', 'w') as json_file:
             json.dump(input_file, json_file)
-
+        '''
 
         # Define the Vrrom-express API endpoint
         api_endpoint = 'http://localhost:3000/'
