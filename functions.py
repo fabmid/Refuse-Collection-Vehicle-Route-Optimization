@@ -208,7 +208,7 @@ def routing_calc_vroom(geolocation_data_dict_main, dates_served):
 
         # Convert route matrix json format
         results_matrix = r.json()
-
+        '''
         # Save results matrix to dict
         routes_data_dict = results_matrix
 
@@ -218,7 +218,7 @@ def routing_calc_vroom(geolocation_data_dict_main, dates_served):
         output = open(file_name, 'wb')
         pickle.dump(routes_data_dict, output)
         output.close()
-
+        '''
         # Update route_data_dict main to store all route data
         routes_data_dict_main[dates_served[i]] = results_matrix
 
