@@ -1,3 +1,6 @@
+# Exclude misc
 .spyproject
 __pycache__
+
+# Exclude directory
 data/output/*
